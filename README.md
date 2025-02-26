@@ -1,5 +1,7 @@
 # NAD-CD (NIDS Alert Data with Concept Drift)
 
+## Introduction
+
 This repository hosts the NAD-CD (NIDS Alert Data with Concept Drift) data set. The data set was collected during 18 months (October 1 2022 -- March 31 2024) in TalTech Security Operations Center (https://doi.org/10.1109/CSR54599.2022.9850281) and contains over 11 million data points. Each data point represents a group of one or more network IDS (NIDS) alerts generated for the same external IP address and for the same signature in a short time frame (the maximum size of the time frame is 5 minutes). Since data points were produced in real time by the CSCAS stream clustering algorithm, each data point has a feature which indicates whether the point is an outlier.
 
 The data set has the following fields:
