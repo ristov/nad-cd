@@ -38,9 +38,9 @@ AttrSimilarity -- similarity for the network IDS alert attribute Attr (there are
 
 ## Licensing
 
-NIDS Alert Group Data Set, Copyright (C) 2025 Risto Vaarandi
+NAD-CD (NIDS Alert Data with Concept Drift), Copyright (C) 2025 Risto Vaarandi
 
-NIDS Alert Group Data Set is licensed under a Creative Commons Attribution 4.0 International License.
+NAD-CD is licensed under a Creative Commons Attribution 4.0 International License.
 
 You should have received a copy of the license along with this work. If not, see https://creativecommons.org/licenses/by/4.0/.
 
