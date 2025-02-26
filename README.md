@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository hosts the NAD-CD data set which can been created for researching concept drift in network IDS (NIDS) alert data. The data set was collected during 18 months (October 1 2022 -- March 31 2024) in TalTech Security Operations Center (https://doi.org/10.1109/CSR54599.2022.9850281) and contains over 11 million data points. Each data point represents a group of one or more NIDS alerts generated for the same external IP address and for the same signature in a short time frame (the maximum size of the time frame is 5 minutes). Since data points were produced in real time by the CSCAS stream clustering algorithm, each data point has a feature which indicates whether the point is an outlier.
+This repository hosts the NAD-CD data set which can been created for researching concept drift in network IDS (NIDS) alert data. The data set was collected during 18 months (October 1 2022 -- March 31 2024) in TalTech Security Operations Center (https://doi.org/10.1109/CSR54599.2022.9850281) and contains over 11 million data points. Each data point represents a group of one or more NIDS alerts generated for the same external IP address and for the same signature in a short time frame (the maximum size of the time frame is 5 minutes). Since data points were produced in real time by the CSCAS stream clustering algorithm (https://doi.org/10.1016/j.future.2024.01.032), each data point has a feature which indicates whether the point is an outlier.
 
 ## Data set fields
 
@@ -35,6 +35,14 @@ Label -- ground-truth label assigned by a human (0 denotes irrelevant and 1 impo
 SCAS -- outlier indicator set by CSCAS (0 denotes inlier and 1 outlier)
 
 AttrSimilarity -- similarity for the network IDS alert attribute Attr (there are 34 attributes in total). Set to -1 if the attribute Attr is not set for the given signature, otherwise ranges from 0 to 1. The field indicates how often has the attribute value been observed in other alert groups from the same cluster (or in other outlier alert groups if the current alert group is an outlier)
+
+## Files in this repository
+
+nad-cd.csv.bz2 -- NAD-CD data set
+
+LICENSE -- license
+
+drift-script.py -- implementation of 'ros', 'rus', 'al-trad', 'al-outlier', and 'random-outlier' methods for concept drift research. The script takes three parameters -- data directory, the method, and the model update strategy ('static', 'full', or 'cumulative'). Files in data directory have to conform with the following naming scheme -- dataset-YYYY-MM.csv or dataset-YYYY-MM-DD.csv.
 
 ## Licensing
 
