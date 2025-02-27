@@ -42,7 +42,7 @@ nad-cd.csv.bz2 -- NAD-CD data set
 
 LICENSE -- license
 
-drift-script.py -- implementation of 'ros', 'rus', 'al-trad', 'al-outlier', and 'random-outlier' methods for concept drift research. The script takes three parameters -- data directory, the method, and the model update strategy ('static', 'full', or 'cumulative'). Files in data directory have to conform with the following naming scheme -- dataset-YYYY-MM.csv or dataset-YYYY-MM-DD.csv.
+drift-script.py -- implementation of 'ros', 'rus', 'al-trad', 'al-outlier', and 'random-outlier' methods for concept drift research. The script takes three parameters -- data directory, the method, and the model update strategy ('static', 'full', or 'cumulative'). Files in data directory have to conform with the following naming scheme -- dataset-YYYY-MM.csv or dataset-YYYY-MM-DD.csv. Each file from data directory must contain the data for the given month or day, and must begin with the same CSV header line as nad-cd.csv.
 
 ## Licensing
 
